@@ -9,7 +9,7 @@ load_dotenv()
 
 llm = ChatOpenAI(
     model="crewai-llama2",
-    base_url="https://loacalhost:11434/v1"
+    base_url="http://localhost:11434/v1"
 )
 
 

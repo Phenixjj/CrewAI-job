@@ -1,6 +1,5 @@
 import json
 
-
 def filter_json(input_file, output_file):
     with open(input_file, 'r') as file:
         data = json.load(file)
@@ -9,7 +8,6 @@ def filter_json(input_file, output_file):
     print(len(filtered_data))
     with open(output_file, 'w') as file:
         json.dump(filtered_data, file, indent=4, ensure_ascii=False)
-
 
 # Usage example
 input_file = 'compagny.json'

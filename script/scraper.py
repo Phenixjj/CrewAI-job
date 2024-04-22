@@ -10,21 +10,21 @@
 # if response.status_code == 200:
 #     # Parse the HTML content
 #     soup = BeautifulSoup(response.content, 'html.parser')
-
+    
 #     # Find the elements containing the startup information
 #     startup_elements = soup.find_all('div', class_='col-lg-3 col-md-4 col-sm-6 col-12 mb-4')
-
+    
 #     # Iterate over each startup element and extract relevant information
 #     for startup in startup_elements:
 #         # Extract startup name
 #         name = startup.find('h3').text.strip()
-
+        
 #         # Extract startup description
 #         description = startup.find('p').text.strip()
-
+        
 #         # Extract startup website link
 #         website = startup.find('a')['href']
-
+        
 #         print("Name:", name)
 #         print("Description:", description)
 #         print("Website:", website)
@@ -73,13 +73,13 @@
 # for startup in startup_elements:
 #     # Extract startup name
 #     name = startup.find('h3').text.strip()
-
+    
 #     # Extract startup description
 #     description = startup.find('p').text.strip()
-
+    
 #     # Extract startup website link
 #     website = startup.find('a')['href']
-
+    
 #     print("Name:", name)
 #     print("Description:", description)
 #     print("Website:", website)
@@ -116,26 +116,26 @@
 #     # Parse the JSON response
 #     data = response.json()
 #     print(data)
-
+    
 #     # Extract startup information from the response
 #     startup_html = data['result']
 #     soup = BeautifulSoup(startup_html, 'html.parser')
-
+    
 #     # Find the elements containing the startup information
 #     startup_elements = soup.find_all('div', class_='option alpes-provence')
-
+    
 #     # Iterate over each startup element and extract relevant information
 #     for startup in startup_elements:
 #         print("**** STARTUP ==> ", startup)
 #         # Extract startup name
 #         name = startup.find('h3').text.strip()
-
+        
 #         # Extract startup description
 #         description = startup.find('p').text.strip()
-
+        
 #         # Extract startup website link
 #         website = startup.find('a')['href']
-
+        
 #         print("Name:", name)
 #         print("Description:", description)
 #         print("Website:", website)
@@ -182,21 +182,21 @@ for page_num in range(0, 5):
         # Extract startup information from the response
         # startup_html = data['html']
         # soup = BeautifulSoup(startup_html, 'html.parser')
-
+        
         # # Find the elements containing the startup information
         # startup_elements = soup.find_all('div', class_='option alpes-provence')
-
+        
         # # Iterate over each startup element and extract relevant information
         # for startup in startup_elements:
         #     # Extract startup name
         #     name = startup.find('h3').text.strip()
-
+            
         #     # Extract startup description
         #     description = startup.find('p').text.strip()
-
+            
         #     # Extract startup website link
         #     website = startup.find('a')['href']
-
+            
         #     print("Name:", name)
         #     print("Description:", description)
         #     print("Website:", website)
